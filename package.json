@@ -1,6 +1,6 @@
 {
   "name": "com.bullseyestudio.nexus-multiversx",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "displayName": "Nexus MultiversX",
   "description": "MultiversX integration into the Nexus multiverse.",
   "unity": "2021.3",
