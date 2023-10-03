@@ -1,0 +1,23 @@
+{
+    "name": "com.bullseyestudio.nexus-multiversx",
+    "version": "0.1.0",
+    "displayName": "Nexus MultiversX",
+    "description": "MultiversX integration into the Nexus multiverse.",
+    "unity": "2021.3",    
+    "documentationUrl": "https://example.com/",
+    "changelogUrl": "https://example.com/changelog.html",
+    "licensesUrl": "https://example.com/licensing.html",
+    "dependencies": {
+   },
+   "keywords": [
+      "nexus",
+      "multiverse",
+      "multiversx"
+    ],
+    "author": {
+      "name": "Bullseye Studio",
+      "email": "contact@bullseyestudio.io",
+      "url": "https://bullseyestudio.io/"
+    }
+  }
+  
