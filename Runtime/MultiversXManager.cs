@@ -37,9 +37,9 @@ namespace Nexus.MultiversX
         }
 
         private static string _API_URL = "https://api.multiversx.com/";
-
+        private static string _MULTIVERS_X_WEBHOOK = "https://wallet.multiversx.com/hook/login";
+        
         public static MultiversXManager Instance { get; private set; }
-        [SerializeField] private string _multiversXUrl = "https://wallet.multiversx.com/hook/login";
         [SerializeField] private MultiversXMenu _button;
         [SerializeField] private List<TMPro.TMP_Text> _texts;
         [SerializeField] private TMPro.TMP_Text _balanceText;
@@ -126,11 +126,9 @@ namespace Nexus.MultiversX
         public void TriggerPopup()
         {
 #if UNITY_EDITOR
-            //OnPopupNavigationComplete("erd1gdzg0t3qy32rllcw3ffljxfqulj77m6hdmtn4g4sn3kydr04fx8sj4ghmy");
-            //OnPopupNavigationComplete("erd160kw47acnlmcvgv8u2s6tp9kdf0msp2fnpzej9kh3ef9ulk8lr8q50pc94");
             OnPopupNavigationComplete(_walletAddress);
 #else
-        OpenPopup(_multiversXUrl, "webhooks");
+            OpenPopup(_MULTIVERS_X_WEBHOOK, "webhooks");
 #endif
         }
 
@@ -158,6 +156,7 @@ namespace Nexus.MultiversX
 
         public void MintNFT(GameObject sender)
         {
+            // TODO: Mint NFT based on the sender object
             Application.OpenURL($"https://www.frameit.gg/");
         }
     }
